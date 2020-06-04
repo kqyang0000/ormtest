@@ -8,7 +8,7 @@ public class UserEntity {
      * 用户 Id
      */
     @Column(name = "user_id")
-    public int _userId;
+    public long _userId;
 
     /**
      * 用户名

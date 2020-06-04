@@ -110,7 +110,7 @@ public final class EntityHelperFactory {
             // 获取列名称
             String colName = annoColumn.name();
 
-            if (f.getType() == Integer.TYPE) {
+            if (f.getType() == Long.TYPE) {
                 // 生成如下代码:
                 // obj._userId = rs.getInt("user_id");
                 sb.append("obj.")
@@ -143,7 +143,7 @@ public final class EntityHelperFactory {
         // 添加方法
         helperClazz.addMethod(cm);
         // 调试文件
-        helperClazz.writeFile("C:/Data/Temp+Test/debug-java");
+        helperClazz.writeFile("~/Desktop/Data/Temp+Test/debug-java");
         // 获取 Java 类
         Class<?> javaClazz = helperClazz.toClass();
 

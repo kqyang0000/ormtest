@@ -28,11 +28,13 @@ public class App000 {
         // 加载 Mysql 驱动
         Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
         // 数据库连接地址
-        String dbConnStr = "jdbc:mysql://localhost:3306/ormtest?user=root&password=root";
+        String dbConnStr = "jdbc:mysql://localhost:3306/ormtest?user=root&password=123456";
         // 创建数据库连接
         Connection conn = DriverManager.getConnection(dbConnStr);
+
         // 简历陈述对象
         Statement stmt = conn.createStatement();
+
 
         // 创建 SQL 查询
         // ormtest 数据库中有个 t_user 数据表,
